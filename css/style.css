@@ -28,7 +28,7 @@ button, strong {
 }
 
 /* LAYOUT #5 #split */
-
+.fas, .far{font-size: 24px;}
 #channels {
     /* #5 #split #left align the channels */
     position: absolute;

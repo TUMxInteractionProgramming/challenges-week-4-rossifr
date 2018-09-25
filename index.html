@@ -6,9 +6,9 @@
 
     <!-- embed the roboto font. This needs to go above your css -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
-
     <!-- embed external css -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <!-- #6 embed #jquery -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -34,9 +34,9 @@
             #Yummy
             <!-- #5 #channels #icons now grouped in .channel-meta span -->
             <span class="channel-meta">
-                <img src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
+		<i class="far fa-star"></i>
                 <!-- #5 #channels #icons now with chevron -->
-                <img src="http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="select">
+		<i class="fas fa-chevron-right"></i>
             </span>
         </li>
         <!-- #6 #channels #click calls our switchChannel with the corresponding name as an argument -->
@@ -44,9 +44,9 @@
             #SevenContinents
             <!-- #5 #channels #icons now grouped in .channel-meta span -->
             <span class="channel-meta">
-                <img src="http://ip.lfe.mw.tum.de/sections/star.png" alt="starred">
+		<i class="fas fa-star"></i>
                 <!-- #5 #channels #icons now with chevron -->
-                <img src="http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="select">
+		<i class="fas fa-chevron-right"></i>
             </span>
         </li>
         <!-- #6 #channels #click calls our switchChannel with the corresponding name as an argument -->
@@ -54,9 +54,9 @@
             #KillerApp
             <!-- #5 #channels #icons now grouped in .channel-meta span -->
             <span class="channel-meta">
-                <img src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
+		<i class="far fa-star"></i>
                 <!-- #5 #channels #icons now with chevron -->
-                <img src="http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="select">
+		<i class="fas fa-chevron-right"></i>
             </span>
         </li>
         <!-- #6 #channels #click calls our switchChannel with the corresponding name as an argument -->
@@ -64,9 +64,9 @@
             #FirstPersonOnMars
             <!-- #5 #channels #icons now grouped in .channel-meta span -->
             <span class="channel-meta">
-                <img src="http://ip.lfe.mw.tum.de/sections/star.png" alt="starred">
+		<i class="fas fa-star"></i>
                 <!-- #5 #channels #icons now with chevron -->
-                <img src="http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="select">
+		<i class="fas fa-chevron-right"></i>
             </span>
         </li>
         <!-- #6 #channels #click calls our switchChannel with the corresponding name as an argument -->
@@ -74,9 +74,9 @@
             #Octoberfest
             <!-- #5 #channels #icons now grouped in .channel-meta span -->
             <span class="channel-meta">
-                <img src="http://ip.lfe.mw.tum.de/sections/star-o.png" alt="not starred">
+		<i class="far fa-star"></i>
                 <!-- #5 #channels #icons now with chevron -->
-                <img src="http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="select">
+		<i class="fas fa-chevron-right"></i>
             </span>
         </li>
 
@@ -87,13 +87,13 @@
         <!-- #6 #taptab buttons are getting ids with #hyphens and a #change listener calling selectTab.
              Pass the #argument to select Tab -->
         <button class="selected" id="tab-new" onclick="selectTab('#tab-new')">
-            <img src="http://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="Bulb"> New
+            <img src="http://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="Bulb"><i class="far fa-lightbulb"></i> New
         </button>
         <button id="tab-trending" onclick="selectTab('#tab-trending')">
-            <img src="http://ip.lfe.mw.tum.de/sections/fire.png" alt="Hot"> Trending
+            <img src="http://ip.lfe.mw.tum.de/sections/fire.png" alt="Hot"><i class="fas fa-fire"> Trending
         </button>
         <button id="tab-favorites" onclick="selectTab('#tab-favorites')">
-            <img src="http://ip.lfe.mw.tum.de/sections/star.png" alt="Star"> Favorites
+            <img src="http://ip.lfe.mw.tum.de/sections/star.png" alt="Star"><i class="far fa-star"></i> Favorites
         </button>
     </div>
 </div>
