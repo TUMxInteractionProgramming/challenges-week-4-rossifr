@@ -31,7 +31,7 @@
     <!-- CHANNELS -->
     <ul>
         <!-- #6 #channels #click calls our switchChannel with the corresponding name as an argument -->
-        <li onclick="switchChannel('#Yummy')">
+        <li onclick="switchChannel(yummy)">
             #Yummy
             <!-- #5 #channels #icons now grouped in .channel-meta span -->
             <span class="channel-meta">
@@ -41,7 +41,7 @@
             </span>
         </li>
         <!-- #6 #channels #click calls our switchChannel with the corresponding name as an argument -->
-        <li class="selected" onclick="switchChannel('#SevenContinents')">
+        <li class="selected" onclick="switchChannel(sevenContinents)">
             #SevenContinents
             <!-- #5 #channels #icons now grouped in .channel-meta span -->
             <span class="channel-meta">
@@ -51,7 +51,7 @@
             </span>
         </li>
         <!-- #6 #channels #click calls our switchChannel with the corresponding name as an argument -->
-        <li onclick="switchChannel('#KillerApp')">
+        <li onclick="switchChannel(killerApp)">
             #KillerApp
             <!-- #5 #channels #icons now grouped in .channel-meta span -->
             <span class="channel-meta">
@@ -61,7 +61,7 @@
             </span>
         </li>
         <!-- #6 #channels #click calls our switchChannel with the corresponding name as an argument -->
-        <li onclick="switchChannel('#FirstPersonOnMars')">
+        <li onclick="switchChannel(firstPersonOnMars)">
             #FirstPersonOnMars
             <!-- #5 #channels #icons now grouped in .channel-meta span -->
             <span class="channel-meta">
@@ -71,7 +71,7 @@
             </span>
         </li>
         <!-- #6 #channels #click calls our switchChannel with the corresponding name as an argument -->
-        <li onclick="switchChannel('#Octoberfest')">
+        <li onclick="switchChannel(octoberFest)">
             #Octoberfest
             <!-- #5 #channels #icons now grouped in .channel-meta span -->
             <span class="channel-meta">
@@ -110,7 +110,7 @@
         <!-- #6 #channels #location also needs an id -->
         <small id="channel-location">by <strong>cheeses.yard.applies</strong></small>
         <!-- #6 #liking channels requires a #filled star / with its #click listener -->
-	<i id="channel-star" onclick="star()" class="fas fa-star"></i>
+	<i id="channel-star" class="fas fa-star" onclick="star()"></i>
     </h1>
 
     <!-- #5 #messages are now wrapped in a div to #scroll properly */ -->
