@@ -4,6 +4,20 @@ console.log("App is alive");
 var currentChannel;
 var currentLocation = {longitude: -0.000235, latitude: 51.477067, what3words:"///issued.rescue.maker"};
 
+function Message(text) {
+  this.createdBy = currentLocation.createdBy;
+  this.latitude = currentLocation.latitude;
+  this.longitude = currentLocation.longitude;
+  this.createdOn = Date.now();
+  this.expiresOn = Date.now(); //is a future date: in 15 minutes. Google how to set a future date in JavaScript.
+  this.text = text;
+  this.own = true;
+}
+
+function sendMessage(){
+  var newMessage = new Message("Hello Chatter");
+}
+
 function selectChannel(channel) {
       currentChannel=channel;
 }
