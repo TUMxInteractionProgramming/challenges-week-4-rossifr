@@ -4,6 +4,22 @@ console.log("App is alive");
 var currentChannel;
 var currentLocation = {longitude: -0.000235, latitude: 51.477067, what3words:"///issued.rescue.maker"};
 
+function createMessageElement(messageObject){
+	var txt='';
+	txt=txt+ '<div class="message"><h3><a href="';
+	txt=txt+messageObject.createdBy;
+	txt=txt+'" target="_blank"><strong>';
+	txt=txt+messageObject.createdBy;
+	txt=txt+'</strong></a>';
+        txt=txt+messageObject.createdOn;
+	txt=txt+'<em>';
+	txt=txt+':expiresIn:';
+	txt=txt+' min. left</em></h3><p>';
+	txt=txt+messageObject.text;
+	txt=txt+'</p><button>+5 min.</button></div>';
+	return txt;
+}
+
 function Message(text) {
   this.createdBy = currentLocation.createdBy;
   this.latitude = currentLocation.latitude;
@@ -16,6 +32,7 @@ function Message(text) {
 
 function sendMessage(){
     var newMessage = new Message("Hello Chatter");
+    $("#messages").append(createMessageElement(newMessage));
     console.log("Message Hello Chatter");
 }
 
