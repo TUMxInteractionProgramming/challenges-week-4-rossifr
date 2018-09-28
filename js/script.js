@@ -1,11 +1,17 @@
 /* #6 start the #external #action and say hello */
 console.log("App is alive");
 
+var currentChannel;
+var currentLocation = {longitude: -0.000235, latitude: 51.477067, what3words:"///issued.rescue.maker"};
+
 /**
  * #6 #Switcher function for the #channels name in the right app bar
  * @param channelName Text which is set
  */
 function switchChannel(channel) {
+	
+    currentChannel=channel;
+	
     //Log the channel switch
     console.log("Tuning in to channel", channel.name);
 
@@ -17,6 +23,10 @@ function switchChannel(channel) {
 
     /* #6 #liking channels on #click */
     $('#channel-star').attr('class', channel.starred ? 'fas fa-star' : 'far fa-star');
+    /*
+	currentChannel.starred=!(currentChannel.starred);
+	$( "div:contains(channel.name)" ).css( "text-decoration", "underline" );
+    */
 
     /* #6 #highlight the selected #channel.
        This is inefficient (jQuery has to search all channel list items), but we'll change it later on */
