@@ -33,6 +33,7 @@ function Message(text) {
 function sendMessage(){
     var newMessage = new Message($('#chatMessage').val() );
     $("#messages").append(createMessageElement(newMessage));
+    $('#chatMessage').value="";
     console.log("Message Hello Chatter");
 }
 
