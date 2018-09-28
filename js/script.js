@@ -15,11 +15,12 @@ function Message(text) {
 }
 
 function sendMessage(){
-  var newMessage = new Message("Hello Chatter");
+    var newMessage = new Message("Hello Chatter");
+    console.log("Message Hello Chatter");
 }
 
 function selectChannel(channel) {
-      currentChannel=channel;
+    currentChannel=channel;
 }
 
 /**

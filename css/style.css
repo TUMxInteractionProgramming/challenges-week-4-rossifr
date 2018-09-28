@@ -185,6 +185,12 @@ li.selected {
     flex-grow: 0;
 }
 
+#send-button {
+  position: absolute;
+  right: 0%;
+  padding: 16px;
+}
+
 #emojis {
     /* #5 #smileys #emojis menu */
     /* colors and borders */
