@@ -4,6 +4,10 @@ console.log("App is alive");
 var currentChannel;
 var currentLocation = {longitude: -0.000235, latitude: 51.477067, what3words:"///issued.rescue.maker"};
 
+function selectChannel(channel) {
+      currentChannel=channel;
+}
+
 /**
  * #6 #Switcher function for the #channels name in the right app bar
  * @param channelName Text which is set
@@ -24,7 +28,6 @@ function switchChannel(channel) {
     /* #6 #liking channels on #click */
     $('#channel-star').attr('class', channel.starred ? 'fas fa-star' : 'far fa-star');
     /*
-	currentChannel.starred=!(currentChannel.starred);
 	$( "div:contains(channel.name)" ).css( "text-decoration", "underline" );
     */
 
@@ -38,6 +41,7 @@ function switchChannel(channel) {
 function star() {
 /*    $('#channel-star').attr('src', 'http://ip.lfe.mw.tum.de/sections/star.png');*/
     $('#channel-star').toggleClass("fas fa-star far fa-star");
+	currentChannel.starred=!(currentChannel.starred);
 }
 
 /**
